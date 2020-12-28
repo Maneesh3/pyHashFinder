@@ -25,7 +25,7 @@ def algoToNum(hashAlgo):
 
 	
 def calculateHashFunction(filePath, hashAlgo, hashAlgoNum, hashCheckValue):
-	if(hashAlgoNum and hashAlgoNum in range(1,15,1)):
+	if(hashAlgoNum and int(hashAlgoNum) in range(1,15,1)):
 		pass
 	else:
 		hashAlgoNum = algoToNum(hashAlgo)
@@ -84,7 +84,7 @@ def main():
 		print(hashAlgosAvailable)
 
 	else:
-		calculateHashFunction(args.fpath, args.hashType, int(args.hashTypeNumb), args.hashCheckValue)
+		calculateHashFunction(args.fpath, args.hashType, args.hashTypeNumb, args.hashCheckValue)
 		
 	
 
