@@ -60,11 +60,7 @@ def main():
 	parser.add_argument("-t","--hash-type", help="type of Hashing Algorithm", dest='hashType')
 	parser.add_argument("-n","--hash-numb", help="type of Hashing Algorithm number", dest='hashTypeNumb')
 	parser.add_argument("-c","--check-value", help="Hash value to check", dest='hashCheckValue')
-
-	#parser.add_argument('_postIdUrl', nargs='?', help="value of PostID/postUrl", type=str)
-		
-	# nargs = '*' for all arguments as list
-	# nargs='?' for optional argument
+	
 	args = parser.parse_args()
 
 	if len(sys.argv) == 1:
